@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Meet the physicians at Apex Pain Clinic – Board-certified pain management specialists." />
+  <title>Our Team – Apex Pain Clinic</title>
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="nav__logo" href="index.html">Apex Pain Clinic</a>
+      <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav__links" id="nav-menu" role="list">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="team.html" aria-current="page">Our Team</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a class="btn btn--nav" href="index.html#contact">Book Appointment</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner" aria-labelledby="team-banner-heading">
+      <div class="container">
+        <p class="section__eyebrow">Our Physicians</p>
+        <h1 id="team-banner-heading" class="page-banner__heading">Meet the Team</h1>
+        <p class="page-banner__sub">Board-certified specialists committed to individualized, compassionate pain care.</p>
+      </div>
+    </section>
+
+    <!-- TEAM GRID -->
+    <section class="section" aria-labelledby="team-grid-heading">
+      <div class="container">
+        <h2 id="team-grid-heading" class="sr-only">Physician profiles</h2>
+        <ul class="team-grid" role="list">
+
+          <li class="doctor-card">
+            <div class="doctor-card__avatar" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+            <div class="doctor-card__body">
+              <h3 class="doctor-card__name">Dr. A. Martinez, MD</h3>
+              <p class="doctor-card__specialty">Interventional Pain Medicine</p>
+              <p class="doctor-card__bio">Specializes in minimally invasive spinal procedures and chronic pain rehabilitation. Dedicated to restoring patient function through evidence-based interventional techniques.</p>
+              <ul class="doctor-card__tags" role="list" aria-label="Credentials">
+                <li>Board-Certified</li>
+                <li>Pain Medicine Fellowship</li>
+                <li>10+ Years Experience</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="doctor-card">
+            <div class="doctor-card__avatar" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+            <div class="doctor-card__body">
+              <h3 class="doctor-card__name">Dr. S. Chen, MD</h3>
+              <p class="doctor-card__specialty">Neuromodulation &amp; Spinal Care</p>
+              <p class="doctor-card__bio">Expert in spinal cord stimulation and advanced neuromodulation therapies for complex chronic pain conditions. Focused on innovative solutions for patients who have not responded to conventional treatments.</p>
+              <ul class="doctor-card__tags" role="list" aria-label="Credentials">
+                <li>Board-Certified</li>
+                <li>Neuromodulation Specialist</li>
+                <li>8+ Years Experience</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="doctor-card">
+            <div class="doctor-card__avatar" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            </div>
+            <div class="doctor-card__body">
+              <h3 class="doctor-card__name">Dr. R. Patel, MD</h3>
+              <p class="doctor-card__specialty">Regenerative &amp; Rehabilitative Medicine</p>
+              <p class="doctor-card__bio">Focuses on regenerative therapies including PRP and prolotherapy, integrated with comprehensive rehabilitation programs to help patients achieve long-term recovery and mobility.</p>
+              <ul class="doctor-card__tags" role="list" aria-label="Credentials">
+                <li>Board-Certified</li>
+                <li>Regenerative Medicine</li>
+                <li>12+ Years Experience</li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Apex Pain Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
