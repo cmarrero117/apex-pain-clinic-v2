@@ -32,6 +32,7 @@
 
   <main id="main">
 
+    <!-- HERO -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__overlay"></div>
       <div class="hero__content container">
@@ -43,31 +44,52 @@
           <a class="btn btn--ghost" href="#services">Our Services</a>
         </div>
       </div>
+      <a class="hero__scroll-arrow" href="#services" aria-label="Scroll to services">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
     </section>
 
+    <!-- TRUST BAR TICKER -->
     <section class="trust-bar" aria-label="Trust signals">
-      <div class="container">
-        <ul class="trust-bar__list" role="list">
+      <div class="trust-bar__track" aria-hidden="true">
+        <ul class="trust-bar__list">
           <li class="trust-bar__item">
-            <svg class="trust-bar__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg class="trust-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             <span>Board-Certified Physicians</span>
           </li>
           <li class="trust-bar__item">
-            <svg class="trust-bar__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <svg class="trust-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
             <span>Accepting New Patients</span>
           </li>
           <li class="trust-bar__item">
-            <svg class="trust-bar__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <svg class="trust-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
             <span>Most Insurance Accepted</span>
           </li>
           <li class="trust-bar__item">
-            <svg class="trust-bar__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <svg class="trust-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Same-Week Appointments</span>
+          </li>
+          <li class="trust-bar__item">
+            <svg class="trust-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Board-Certified Physicians</span>
+          </li>
+          <li class="trust-bar__item">
+            <svg class="trust-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Accepting New Patients</span>
+          </li>
+          <li class="trust-bar__item">
+            <svg class="trust-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            <span>Most Insurance Accepted</span>
+          </li>
+          <li class="trust-bar__item">
+            <svg class="trust-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
             <span>Same-Week Appointments</span>
           </li>
         </ul>
       </div>
     </section>
 
+    <!-- SERVICES -->
     <section class="services section" id="services" aria-labelledby="services-heading">
       <div class="container">
         <div class="section__header">
@@ -99,7 +121,7 @@
           <li class="service-card">
             <div class="service-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
             <h3 class="service-card__title">Regenerative Medicine (PRP)</h3>
-            <p class="service-card__desc">Platelet-rich plasma therapy harnessing your body’s own healing factors to repair damaged tissue.</p>
+            <p class="service-card__desc">Platelet-rich plasma therapy harnessing your body's own healing factors to repair damaged tissue.</p>
           </li>
           <li class="service-card">
             <div class="service-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></div>
@@ -107,9 +129,13 @@
             <p class="service-card__desc">Carefully monitored, evidence-based pharmacological plans integrated with your overall care.</p>
           </li>
         </ul>
+        <div class="services__cta">
+          <a class="btn btn--primary" href="#contact">See All Services &rarr;</a>
+        </div>
       </div>
     </section>
 
+    <!-- ABOUT TEASER -->
     <section class="teaser section" aria-labelledby="about-teaser-heading">
       <div class="container teaser__inner">
         <div class="teaser__text">
@@ -119,13 +145,14 @@
           <a class="btn btn--primary" href="about.html">Our Story &rarr;</a>
         </div>
         <div class="teaser__stats" aria-label="Clinic highlights">
-          <div class="stat"><span class="stat__number">500+</span><span class="stat__label">Patients Treated</span></div>
-          <div class="stat"><span class="stat__number">15+</span><span class="stat__label">Years of Experience</span></div>
-          <div class="stat"><span class="stat__number">3</span><span class="stat__label">Clinic Locations</span></div>
+          <div class="stat stat--large"><span class="stat__number">500+</span><span class="stat__label">Patients Treated</span></div>
+          <div class="stat stat--large"><span class="stat__number">15+</span><span class="stat__label">Years of Experience</span></div>
+          <div class="stat stat--large"><span class="stat__number">3</span><span class="stat__label">Clinic Locations</span></div>
         </div>
       </div>
     </section>
 
+    <!-- TEAM TEASER -->
     <section class="teaser teaser--alt section" aria-labelledby="team-teaser-heading">
       <div class="container teaser__inner">
         <div class="teaser__text">
@@ -142,6 +169,7 @@
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section class="contact section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
         <div class="section__header contact__header">
@@ -164,7 +192,7 @@
               </li>
               <li>
                 <span class="contact-info__label">Office Hours</span>
-                <p>Mon–Fri: 8:00 AM – 5:00 PM<br>Sat: 9:00 AM – 1:00 PM</p>
+                <p>Mon&ndash;Fri: 8:00 AM &ndash; 5:00 PM<br>Sat: 9:00 AM &ndash; 1:00 PM</p>
               </li>
               <li>
                 <span class="contact-info__label">Quick Note</span>
@@ -185,7 +213,6 @@
                   <input id="email" name="email" type="email" placeholder="you@example.com" required />
                 </div>
               </div>
-
               <div class="form-row">
                 <div class="form-group">
                   <label for="phone">Phone</label>
@@ -204,22 +231,19 @@
                   </select>
                 </div>
               </div>
-
               <div class="form-row">
                 <div class="form-group">
                   <label for="preferred-date">Preferred Date</label>
                   <input id="preferred-date" name="preferred-date" type="date" required />
                 </div>
               </div>
-
               <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Tell us a little about your symptoms or what you'd like help with."></textarea>
               </div>
-
               <button class="btn btn--primary" type="submit">Request Appointment</button>
               <p class="form-note">We'll confirm your appointment request within 1 business day.</p>
-              <p class="form-success" id="form-success" role="status" aria-live="polite" hidden>Thank you — your appointment request has been received. A member of our team will contact you shortly.</p>
+              <p class="form-success" id="form-success" role="status" aria-live="polite" hidden>Thank you &mdash; your appointment request has been received. A member of our team will contact you shortly.</p>
             </form>
           </div>
         </div>
