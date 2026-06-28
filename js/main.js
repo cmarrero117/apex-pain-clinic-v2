@@ -15,7 +15,6 @@ if (navToggle && navLinks) {
     navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
   });
 
-  // Close nav when a link is clicked (mobile)
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('is-open');
@@ -33,4 +32,23 @@ if (header) {
       ? 'var(--shadow-md)'
       : 'var(--shadow-sm)';
   }, { passive: true });
+}
+
+// --- Appointment form demo submission ---
+const appointmentForm = document.querySelector('#appointment-form');
+const formSuccess = document.querySelector('#form-success');
+
+if (appointmentForm && formSuccess) {
+  appointmentForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (!appointmentForm.checkValidity()) {
+      appointmentForm.reportValidity();
+      return;
+    }
+
+    appointmentForm.reset();
+    formSuccess.hidden = false;
+    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
 }
