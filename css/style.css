@@ -586,7 +586,7 @@ body {
 .footer__legal a:hover { color: rgba(255,255,255,0.7); }
 
 /* =============================================
-   RESPONSIVE
+   RESPONSIVE — TABLET (max 900px)
    ============================================= */
 @media (max-width: 900px) {
   .services__grid { grid-template-columns: repeat(2, 1fr); }
@@ -597,7 +597,12 @@ body {
   .contact__grid { grid-template-columns: 1fr; }
   .footer__main { grid-template-columns: 1fr 1fr; gap: var(--space-10); }
 }
+
+/* =============================================
+   RESPONSIVE — MOBILE (max 768px)
+   ============================================= */
 @media (max-width: 768px) {
+  /* Nav */
   .nav__toggle { display: flex; }
   .nav__links {
     display: none;
@@ -612,17 +617,85 @@ body {
   .nav__links.is-open { display: flex; }
   .nav__links a::after { display: none; }
   .nav { position: relative; }
-  .hero__content { padding-block: var(--space-16); }
+
+  /* Hero */
+  .hero { min-height: 80vh; }
+  .hero__content { padding-block: var(--space-12); }
+  .hero__subtext { font-size: var(--text-base); }
   .hero__actions { flex-direction: column; }
-  .btn { width: 100%; justify-content: center; }
+
+  /* Sections */
+  .section { padding-block: var(--space-12); }
+  .section__header { margin-bottom: var(--space-8); }
+
+  /* Page banner */
+  .page-banner { padding-block: var(--space-12); }
+  .page-banner__sub { font-size: var(--text-base); }
+
+  /* Grids */
   .services__grid { grid-template-columns: 1fr; }
   .team-grid { grid-template-columns: 1fr; }
   .stats-band__grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-band { padding-block: var(--space-10); }
+
+  /* Teaser */
   .teaser__avatar-row { gap: var(--space-4); }
   .avatar-placeholder { width: 80px; height: 80px; }
+
+  /* Contact */
+  .contact-info,
+  .contact-form-wrap { padding: var(--space-6); }
   .form-row { grid-template-columns: 1fr; }
-  .footer__main { grid-template-columns: 1fr; gap: var(--space-8); }
+
+  /* Doctor cards */
+  .doctor-card__body { padding: var(--space-4); }
+
+  /* Footer */
+  .footer__main { grid-template-columns: 1fr; gap: var(--space-8); padding-block: var(--space-10); }
   .footer__bottom { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+}
+
+/* =============================================
+   RESPONSIVE — SMALL MOBILE (max 480px)
+   ============================================= */
+@media (max-width: 480px) {
+  /* Nav logo smaller */
+  .nav__logo { font-size: var(--text-lg); }
+
+  /* Hero tighter */
+  .hero { min-height: 70vh; }
+  .hero__content { padding-block: var(--space-10); }
+  .hero__heading { margin-bottom: var(--space-4); }
+  .hero__subtext { margin-bottom: var(--space-8); }
+
+  /* Sections */
+  .section { padding-block: var(--space-10); }
+  .page-banner { padding-block: var(--space-10); }
+
+  /* Buttons full-width only at 480px and below */
+  .btn { width: 100%; justify-content: center; }
+  /* But keep nav btn compact in the mobile menu */
+  .nav__links .btn--nav { width: auto; justify-content: flex-start; }
+
+  /* Service cards tighter */
+  .service-card { padding: var(--space-6); }
+
+  /* Stats 2-col with smaller numbers */
+  .stats-band__grid { gap: var(--space-4); }
+  .stat--large .stat__number { font-size: clamp(2rem, 8vw, 3rem); }
+
+  /* Contact cards tighter */
+  .contact-info,
+  .contact-form-wrap { padding: var(--space-5); }
+
+  /* Footer tighter */
+  .footer__main { padding-block: var(--space-8); gap: var(--space-6); }
+  .footer__bottom { padding-block: var(--space-4); }
+  .footer__legal { gap: var(--space-4); }
+
+  /* Team card body */
+  .doctor-card__body { padding: var(--space-4); }
+  .doctor-card__name { font-size: var(--text-lg); }
 }
 
 /* Reduced motion */
