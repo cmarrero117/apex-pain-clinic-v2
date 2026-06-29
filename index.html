@@ -227,6 +227,8 @@
       </div>
     </section>
 
+    <hr class="section-divider" />
+
     <!-- CONTACT / BOOK APPOINTMENT -->
     <section class="contact section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
@@ -389,7 +391,6 @@
   </footer>
 
   <script>
-    // Mobile nav toggle
     const toggle = document.querySelector('.nav__toggle');
     const menu   = document.querySelector('.nav__links');
     if (toggle && menu) {
@@ -398,7 +399,6 @@
         toggle.setAttribute('aria-expanded', open);
       });
     }
-    // Contact form
     const form    = document.getElementById('contact-form');
     const success = document.getElementById('form-success');
     if (form && success) {
