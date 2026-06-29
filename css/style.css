@@ -60,16 +60,19 @@ body {
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   padding: var(--space-3) var(--space-6);
   border-radius: var(--radius-full);
   font-family: var(--font-sans);
   font-size: var(--text-sm);
   font-weight: var(--font-weight-semibold);
+  line-height: 1;
   cursor: pointer;
   border: 2px solid transparent;
   transition: background var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
   white-space: nowrap;
+  vertical-align: middle;
 }
 .btn:focus-visible {
   outline: 3px solid var(--color-accent);
@@ -80,7 +83,15 @@ body {
 .btn--primary:focus-visible { outline-color: var(--color-primary); }
 .btn--ghost { background: transparent; color: var(--color-white); border-color: rgba(255,255,255,0.6); }
 .btn--ghost:hover { background: rgba(255,255,255,0.12); border-color: var(--color-white); }
-.btn--nav { background: var(--color-accent); color: var(--color-white); padding: var(--space-2) var(--space-5); }
+.btn--nav {
+  background: var(--color-accent);
+  color: var(--color-white);
+  padding: var(--space-2) var(--space-5);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 .btn--nav:hover { background: var(--color-accent-dark); }
 .btn--nav:focus-visible { outline-color: var(--color-accent); }
 
@@ -101,13 +112,39 @@ body {
   height: 70px;
   gap: var(--space-8);
 }
+
+/* Logo lockup */
 .nav__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: var(--text-xl);
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
   letter-spacing: -0.02em;
   flex-shrink: 0;
+  text-decoration: none;
 }
+.nav__logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: var(--color-primary);
+  border-radius: 10px;
+  flex-shrink: 0;
+  color: var(--color-white);
+  transition: background var(--transition-fast);
+}
+.nav__logo:hover .nav__logo-mark {
+  background: var(--color-accent);
+}
+.nav__logo-mark svg {
+  width: 22px;
+  height: 22px;
+}
+
 .nav__links { display: flex; align-items: center; gap: var(--space-8); }
 .nav__links a {
   position: relative;
@@ -661,6 +698,8 @@ body {
 @media (max-width: 480px) {
   /* Nav logo smaller */
   .nav__logo { font-size: var(--text-lg); }
+  .nav__logo-mark { width: 32px; height: 32px; border-radius: 8px; }
+  .nav__logo-mark svg { width: 18px; height: 18px; }
 
   /* Hero tighter */
   .hero { min-height: 70vh; }

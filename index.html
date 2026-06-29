@@ -14,7 +14,19 @@
 
   <header class="site-header" role="banner">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="nav__logo" href="index.html">Apex Pain Clinic</a>
+      <a class="nav__logo" href="index.html" aria-label="Apex Pain Clinic – Home">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <!-- Spine logo mark: 3 vertebrae + connecting line -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="8" y="2" width="8" height="4" rx="1.5"/>
+            <rect x="8" y="9" width="8" height="4" rx="1.5"/>
+            <rect x="8" y="16" width="8" height="4" rx="1.5"/>
+            <line x1="12" y1="6" x2="12" y2="9"/>
+            <line x1="12" y1="13" x2="12" y2="16"/>
+          </svg>
+        </span>
+        <span>Apex Pain Clinic</span>
+      </a>
       <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>
         <span class="hamburger"></span>
@@ -75,7 +87,6 @@
         </div>
         <ul class="services__grid" role="list">
 
-          <!-- Interventional Pain: syringe -->
           <li class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -91,7 +102,6 @@
             <p class="service-card__desc">Minimally invasive procedures targeting the source of pain for lasting relief.</p>
           </li>
 
-          <!-- Spinal Cord Stimulation: spine with signal -->
           <li class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -107,7 +117,6 @@
             <p class="service-card__desc">Advanced neuromodulation therapy that disrupts pain signals before they reach the brain.</p>
           </li>
 
-          <!-- Joint Injections: joint with needle -->
           <li class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -124,7 +133,6 @@
             <p class="service-card__desc">Targeted corticosteroid and hyaluronic acid injections to reduce inflammation and restore mobility.</p>
           </li>
 
-          <!-- Nerve Blocks: branching nerve -->
           <li class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -144,7 +152,6 @@
             <p class="service-card__desc">Precise anesthetic injections that interrupt pain signals along specific nerve pathways.</p>
           </li>
 
-          <!-- Regenerative Medicine (PRP): drop with leaf/cell -->
           <li class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -158,7 +165,6 @@
             <p class="service-card__desc">Platelet-rich plasma therapy harnessing your body's own healing factors to repair damaged tissue.</p>
           </li>
 
-          <!-- Medication Management: pill capsule -->
           <li class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -167,171 +173,4 @@
               </svg>
             </div>
             <h3 class="service-card__title">Medication Management</h3>
-            <p class="service-card__desc">Carefully monitored, evidence-based pharmacological plans integrated with your overall care.</p>
-          </li>
-
-        </ul>
-        <div class="services__cta"><a class="btn btn--primary" href="services.html">See All Services &rarr;</a></div>
-      </div>
-    </section>
-
-    <!-- ABOUT TEASER -->
-    <section class="teaser section" aria-labelledby="about-teaser-heading">
-      <div class="container teaser__inner">
-        <div class="teaser__text">
-          <p class="section__eyebrow">Who We Are</p>
-          <h2 id="about-teaser-heading" class="section__heading">Care Rooted in Compassion</h2>
-          <p class="teaser__body">Apex Pain Clinic was built on a simple belief: every patient deserves a personalized path to relief. Learn about our mission, our values, and what sets our approach apart.</p>
-          <a class="btn btn--primary" href="about.html">Our Story &rarr;</a>
-        </div>
-        <div class="teaser__stats" aria-label="Clinic highlights">
-          <div class="stat stat--large"><span class="stat__number">500+</span><span class="stat__label">Patients Treated</span></div>
-          <div class="stat stat--large"><span class="stat__number">15+</span><span class="stat__label">Years of Experience</span></div>
-          <div class="stat stat--large"><span class="stat__number">3</span><span class="stat__label">Clinic Locations</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TEAM TEASER -->
-    <section class="teaser teaser--alt section" aria-labelledby="team-teaser-heading">
-      <div class="container teaser__inner">
-        <div class="teaser__text">
-          <p class="section__eyebrow">Our Physicians</p>
-          <h2 id="team-teaser-heading" class="section__heading">Meet the Specialists Behind Your Care</h2>
-          <p class="teaser__body">Our board-certified physicians bring decades of combined experience in interventional and rehabilitative pain medicine. Your care is always in expert hands.</p>
-          <a class="btn btn--primary" href="team.html">Meet the Team &rarr;</a>
-        </div>
-        <div class="teaser__avatar-row" aria-hidden="true">
-          <div class="avatar-placeholder"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle cx="50" cy="35" r="20" fill="#9db8cc"/><ellipse cx="50" cy="80" rx="30" ry="22" fill="#bdd0de"/></svg></div>
-          <div class="avatar-placeholder"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle cx="50" cy="35" r="20" fill="#9db8cc"/><ellipse cx="50" cy="80" rx="30" ry="22" fill="#bdd0de"/></svg></div>
-          <div class="avatar-placeholder"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet"><circle cx="50" cy="35" r="20" fill="#9db8cc"/><ellipse cx="50" cy="80" rx="30" ry="22" fill="#bdd0de"/></svg></div>
-        </div>
-      </div>
-    </section>
-
-    <hr class="section-divider" />
-
-    <!-- CONTACT -->
-    <section class="contact section" id="contact" aria-labelledby="contact-heading">
-      <div class="container">
-        <div class="section__header contact__header">
-          <p class="section__eyebrow">Get Started</p>
-          <h2 id="contact-heading" class="section__heading">Request an Appointment</h2>
-          <p class="section__subtext">Reach out today and our team will help you take the next step toward relief.</p>
-        </div>
-        <div class="contact__grid">
-          <div class="contact-info">
-            <h3 class="contact-info__title">Contact Information</h3>
-            <ul class="contact-info__list" role="list">
-              <li><span class="contact-info__label">Address</span><p>123 Medical Center Blvd, Suite 400<br>San Juan, PR 00907</p></li>
-              <li><span class="contact-info__label">Phone</span><p><a href="tel:+17875550199">(787) 555-0199</a></p></li>
-              <li><span class="contact-info__label">Office Hours</span><p>Mon&ndash;Fri: 8:00 AM &ndash; 5:00 PM<br>Sat: 9:00 AM &ndash; 1:00 PM</p></li>
-              <li><span class="contact-info__label">Quick Note</span><p>Walk-ins welcome. Same-week appointments available based on scheduling.</p></li>
-            </ul>
-          </div>
-          <div class="contact-form-wrap">
-            <form class="contact-form" id="appointment-form" novalidate>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="full-name">Full Name</label>
-                  <input id="full-name" name="full-name" type="text" autocomplete="name" placeholder="Your full name" required aria-required="true" />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required aria-required="true" />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 123-4567" required aria-required="true" />
-                </div>
-                <div class="form-group">
-                  <label for="reason">Reason for Visit</label>
-                  <select id="reason" name="reason" required aria-required="true">
-                    <option value="">Select one</option>
-                    <option>Back Pain</option>
-                    <option>Neck Pain</option>
-                    <option>Joint Pain</option>
-                    <option>Nerve Pain</option>
-                    <option>Follow-Up Visit</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="preferred-date">Preferred Date</label>
-                  <input id="preferred-date" name="preferred-date" type="date" autocomplete="off" required aria-required="true" aria-describedby="date-hint" />
-                  <span id="date-hint" class="form-note">Select your preferred appointment date.</span>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="message">Message <span aria-hidden="true">(optional)</span></label>
-                <textarea id="message" name="message" rows="5" autocomplete="off" placeholder="Tell us a little about your symptoms or what you'd like help with."></textarea>
-              </div>
-              <button class="btn btn--primary" type="submit">Request Appointment</button>
-              <p class="form-note">We'll confirm your appointment request within 1 business day.</p>
-              <p class="form-success" id="form-success" role="status" aria-live="polite" aria-atomic="true" hidden>Thank you &mdash; your appointment request has been received. A member of our team will contact you shortly.</p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer__main">
-        <div class="footer__brand">
-          <p class="footer__brand-name">Apex Pain Clinic</p>
-          <p class="footer__tagline">Compassionate, expert pain care helping patients reclaim their quality of life.</p>
-          <div class="footer__socials">
-            <a class="footer__social-link" href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a class="footer__social-link" href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a class="footer__social-link" href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-          </div>
-        </div>
-        <div class="footer__col">
-          <h3 class="footer__col-heading">Quick Links</h3>
-          <ul class="footer__links" role="list">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact">Book Appointment</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3 class="footer__col-heading">Our Services</h3>
-          <ul class="footer__links" role="list">
-            <li><a href="services.html">Interventional Pain</a></li>
-            <li><a href="services.html">Spinal Cord Stimulation</a></li>
-            <li><a href="services.html">Joint Injections</a></li>
-            <li><a href="services.html">Nerve Blocks</a></li>
-            <li><a href="services.html">Regenerative Medicine</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3 class="footer__col-heading">Contact</h3>
-          <ul class="footer__contact-list" role="list">
-            <li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><p>123 Medical Center Blvd, Suite 400<br>San Juan, PR 00907</p></li>
-            <li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><p><a href="tel:+17875550199">(787) 555-0199</a></p></li>
-            <li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p>Mon&ndash;Fri: 8AM &ndash; 5PM<br>Sat: 9AM &ndash; 1PM</p></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 Apex Pain Clinic. All rights reserved.</p>
-        <nav class="footer__legal" aria-label="Legal links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-        </nav>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
-</html>
+            <p class="service-card__desc">Carefully monitored, 
