@@ -91,9 +91,14 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  /* Reset nav link overrides that cause off-center text */
+  padding-bottom: var(--space-2);
 }
 .btn--nav:hover { background: var(--color-accent-dark); }
 .btn--nav:focus-visible { outline-color: var(--color-accent); }
+/* Neutralise the underline pseudo-element on the nav btn */
+.nav__links .btn--nav::after { display: none !important; }
+.nav__links .btn--nav { padding-bottom: var(--space-2); }
 
 /* =============================================
    HEADER / NAV

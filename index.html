@@ -16,12 +16,19 @@
     <nav class="nav container" aria-label="Primary navigation">
       <a class="nav__logo" href="index.html" aria-label="Apex Pain Clinic – Home">
         <span class="nav__logo-mark" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="8" y="2" width="8" height="4" rx="1.5"/>
-            <rect x="8" y="9" width="8" height="4" rx="1.5"/>
-            <rect x="8" y="16" width="8" height="4" rx="1.5"/>
-            <line x1="12" y1="6" x2="12" y2="9"/>
-            <line x1="12" y1="13" x2="12" y2="16"/>
+          <!-- Organic spine + apex mark: flowing vertebrae column with a peak highlight -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Vertebrae: three oval discs stacked with tapered ends -->
+            <ellipse cx="12" cy="5.5" rx="4.5" ry="2" />
+            <ellipse cx="12" cy="12" rx="4.5" ry="2" />
+            <ellipse cx="12" cy="18.5" rx="4.5" ry="2" />
+            <!-- Central canal / cord running through -->
+            <line x1="12" y1="3.5" x2="12" y2="20.5" stroke-width="1" opacity="0.5" />
+            <!-- Lateral processes (wings) on middle vertebra for character -->
+            <line x1="7.5" y1="12" x2="5" y2="10.5" />
+            <line x1="16.5" y1="12" x2="19" y2="10.5" />
+            <!-- Apex highlight dot at top -->
+            <circle cx="12" cy="3" r="1.2" fill="currentColor" stroke="none" />
           </svg>
         </span>
         <span>Apex Pain Clinic</span>
