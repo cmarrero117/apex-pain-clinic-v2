@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="About Apex Pain Clinic – Our mission, values, and story." />
   <title>About – Apex Pain Clinic</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a5c8a'/%3E%3Cdefs%3E%3ClinearGradient id='cg' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%237ee8e4'/%3E%3Cstop offset='1' stop-color='%2320b2aa' stop-opacity='0.6'/%3E%3C/linearGradient%3E%3Cfilter id='gl'%3E%3CfeGaussianBlur stdDeviation='0.6' result='b'/%3E%3CfeMerge%3E%3CfeMergeNode in='b'/%3E%3CfeMergeNode in='SourceGraphic'/%3E%3C/feMerge%3E%3C/filter%3E%3C/defs%3E%3Cpath d='M16 4 C13 4 10.5 5.2 10.5 6.5 C10.5 7.8 13 9 16 9 C19 9 21.5 7.8 21.5 6.5 C21.5 5.2 19 4 16 4Z' fill='rgba(255,255,255,0.92)'/%3E%3Cpath d='M10.5 6.2 C9 5.8 7 5.5 6 6 C7 6.3 9 6.6 10.5 6.8Z' fill='rgba(255,255,255,0.65)'/%3E%3Cpath d='M21.5 6.2 C23 5.8 25 5.5 26 6 C25 6.3 23 6.6 21.5 6.8Z' fill='rgba(255,255,255,0.65)'/%3E%3Cpath d='M16 13 C12.5 13 9.5 14.4 9.5 16 C9.5 17.6 12.5 19 16 19 C19.5 19 22.5 17.6 22.5 16 C22.5 14.4 19.5 13 16 13Z' fill='rgba(255,255,255,0.92)'/%3E%3Cpath d='M9.5 15.6 C7.5 15 5 14.8 4 15.5 C5 15.9 7.5 16.2 9.5 16.4Z' fill='rgba(255,255,255,0.6)'/%3E%3Cpath d='M22.5 15.6 C24.5 15 27 14.8 28 15.5 C27 15.9 24.5 16.2 22.5 16.4Z' fill='rgba(255,255,255,0.6)'/%3E%3Cpath d='M16 23 C13 23 10.5 24.2 10.5 25.5 C10.5 26.8 13 28 16 28 C19 28 21.5 26.8 21.5 25.5 C21.5 24.2 19 23 16 23Z' fill='rgba(255,255,255,0.92)'/%3E%3Cpath d='M10.5 25.2 C9 24.8 7 24.5 6 25 C7 25.3 9 25.6 10.5 25.8Z' fill='rgba(255,255,255,0.65)'/%3E%3Cpath d='M21.5 25.2 C23 24.8 25 24.5 26 25 C25 25.3 23 25.6 21.5 25.8Z' fill='rgba(255,255,255,0.65)'/%3E%3Crect x='14.8' y='4' width='2.4' height='24' rx='1.2' fill='url(%23cg)' filter='url(%23gl)' opacity='0.9'/%3E%3Cpath d='M16 1.5 L13.2 4.2 L16 3.6 L18.8 4.2 Z' fill='%237ee8e4'/%3E%3C/svg%3E" />
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -14,7 +15,34 @@
 
   <header class="site-header" role="banner">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="nav__logo" href="index.html">Apex Pain Clinic</a>
+      <a class="nav__logo" href="index.html">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
+            <defs>
+              <linearGradient id="canalGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#7ee8e4" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#20b2aa" stop-opacity="0.6"/>
+              </linearGradient>
+              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="0.6" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path d="M16 4 C13 4 10.5 5.2 10.5 6.5 C10.5 7.8 13 9 16 9 C19 9 21.5 7.8 21.5 6.5 C21.5 5.2 19 4 16 4Z" fill="rgba(255,255,255,0.92)"/>
+            <path d="M10.5 6.2 C9 5.8 7 5.5 6 6 C7 6.3 9 6.6 10.5 6.8Z" fill="rgba(255,255,255,0.65)"/>
+            <path d="M21.5 6.2 C23 5.8 25 5.5 26 6 C25 6.3 23 6.6 21.5 6.8Z" fill="rgba(255,255,255,0.65)"/>
+            <path d="M16 13 C12.5 13 9.5 14.4 9.5 16 C9.5 17.6 12.5 19 16 19 C19.5 19 22.5 17.6 22.5 16 C22.5 14.4 19.5 13 16 13Z" fill="rgba(255,255,255,0.92)"/>
+            <path d="M9.5 15.6 C7.5 15 5 14.8 4 15.5 C5 15.9 7.5 16.2 9.5 16.4Z" fill="rgba(255,255,255,0.6)"/>
+            <path d="M22.5 15.6 C24.5 15 27 14.8 28 15.5 C27 15.9 24.5 16.2 22.5 16.4Z" fill="rgba(255,255,255,0.6)"/>
+            <path d="M16 23 C13 23 10.5 24.2 10.5 25.5 C10.5 26.8 13 28 16 28 C19 28 21.5 26.8 21.5 25.5 C21.5 24.2 19 23 16 23Z" fill="rgba(255,255,255,0.92)"/>
+            <path d="M10.5 25.2 C9 24.8 7 24.5 6 25 C7 25.3 9 25.6 10.5 25.8Z" fill="rgba(255,255,255,0.65)"/>
+            <path d="M21.5 25.2 C23 24.8 25 24.5 26 25 C25 25.3 23 25.6 21.5 25.8Z" fill="rgba(255,255,255,0.65)"/>
+            <rect x="14.8" y="4" width="2.4" height="24" rx="1.2" fill="url(#canalGrad)" filter="url(#glow)" opacity="0.9"/>
+            <path d="M16 1.5 L13.2 4.2 L16 3.6 L18.8 4.2 Z" fill="#7ee8e4"/>
+          </svg>
+        </span>
+        <span>Apex Pain Clinic</span>
+      </a>
       <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>
         <span class="hamburger"></span>
@@ -46,7 +74,7 @@
           <div class="about-mission__text">
             <p class="section__eyebrow">Our Mission</p>
             <h2 id="mission-heading" class="section__heading" style="text-align:left;">Why We Do What We Do</h2>
-            <p>Apex Pain Clinic was founded with a single purpose: to give patients suffering from chronic pain a clear, compassionate path forward. Pain is not just physical — it affects every part of a person’s life. We treat the whole patient, not just the symptom.</p>
+            <p>Apex Pain Clinic was founded with a single purpose: to give patients suffering from chronic pain a clear, compassionate path forward. Pain is not just physical — it affects every part of a person's life. We treat the whole patient, not just the symptom.</p>
             <p>Our physicians combine decades of clinical experience with the latest interventional techniques to create individualized treatment plans. We believe that every patient deserves to understand their condition and feel confident in their care.</p>
             <p>From your first consultation to your ongoing follow-up, our team is with you every step of the way.</p>
           </div>
@@ -88,41 +116,13 @@
             <a class="footer__social-link" href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
           </div>
         </div>
-        <div class="footer__col">
-          <h3 class="footer__col-heading">Quick Links</h3>
-          <ul class="footer__links" role="list">
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li><a href="index.html#contact">Book Appointment</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3 class="footer__col-heading">Our Services</h3>
-          <ul class="footer__links" role="list">
-            <li><a href="services.html">Interventional Pain</a></li>
-            <li><a href="services.html">Spinal Cord Stimulation</a></li>
-            <li><a href="services.html">Joint Injections</a></li>
-            <li><a href="services.html">Nerve Blocks</a></li>
-            <li><a href="services.html">Regenerative Medicine</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h3 class="footer__col-heading">Contact</h3>
-          <ul class="footer__contact-list" role="list">
-            <li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><p>123 Medical Center Blvd, Suite 400<br>San Juan, PR 00907</p></li>
-            <li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><p><a href="tel:+17875550199">(787) 555-0199</a></p></li>
-            <li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p>Mon&ndash;Fri: 8AM &ndash; 5PM<br>Sat: 9AM &ndash; 1PM</p></li>
-          </ul>
-        </div>
+        <div class="footer__col"><h3 class="footer__col-heading">Quick Links</h3><ul class="footer__links" role="list"><li><a href="services.html">Services</a></li><li><a href="about.html">About Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="index.html#contact">Contact</a></li><li><a href="index.html#contact">Book Appointment</a></li></ul></div>
+        <div class="footer__col"><h3 class="footer__col-heading">Our Services</h3><ul class="footer__links" role="list"><li><a href="services.html">Interventional Pain</a></li><li><a href="services.html">Spinal Cord Stimulation</a></li><li><a href="services.html">Joint Injections</a></li><li><a href="services.html">Nerve Blocks</a></li><li><a href="services.html">Regenerative Medicine</a></li></ul></div>
+        <div class="footer__col"><h3 class="footer__col-heading">Contact</h3><ul class="footer__contact-list" role="list"><li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><p>123 Medical Center Blvd, Suite 400<br>San Juan, PR 00907</p></li><li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><p><a href="tel:+17875550199">(787) 555-0199</a></p></li><li class="footer__contact-item"><svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><p>Mon&ndash;Fri: 8AM &ndash; 5PM<br>Sat: 9AM &ndash; 1PM</p></li></ul></div>
       </div>
       <div class="footer__bottom">
         <p>&copy; 2026 Apex Pain Clinic. All rights reserved.</p>
-        <nav class="footer__legal" aria-label="Legal links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Use</a>
-        </nav>
+        <nav class="footer__legal" aria-label="Legal links"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></nav>
       </div>
     </div>
   </footer>
