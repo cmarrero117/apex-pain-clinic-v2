@@ -102,150 +102,30 @@
           <p class="section__subtext">We offer a full spectrum of interventional and non-interventional treatments tailored to your condition and lifestyle.</p>
         </div>
         <ul class="services__grid" role="list">
-
-          <!-- 1. Interventional Pain Management: syringe aimed at a target crosshair -->
-          <li class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <!-- syringe barrel -->
-                <rect x="10" y="4" width="3" height="10" rx="1"/>
-                <!-- plunger rod -->
-                <line x1="11.5" y1="2" x2="11.5" y2="4"/>
-                <!-- plunger cap -->
-                <line x1="10" y1="2" x2="13" y2="2"/>
-                <!-- needle tip -->
-                <line x1="11.5" y1="14" x2="11.5" y2="17"/>
-                <!-- needle fine tip -->
-                <line x1="11.5" y1="17" x2="11.5" y2="19"/>
-                <!-- target crosshair circle -->
-                <circle cx="17" cy="19" r="3"/>
-                <!-- crosshair lines -->
-                <line x1="17" y1="15.5" x2="17" y2="16.5"/>
-                <line x1="17" y1="21.5" x2="17" y2="22.5"/>
-                <line x1="13.5" y1="19" x2="14.5" y2="19"/>
-                <line x1="19.5" y1="19" x2="20.5" y2="19"/>
-                <!-- center dot -->
-                <circle cx="17" cy="19" r="0.8" fill="currentColor" stroke="none"/>
-                <!-- syringe graduation marks -->
-                <line x1="10" y1="7" x2="9" y2="7"/>
-                <line x1="10" y1="9.5" x2="9" y2="9.5"/>
-                <line x1="10" y1="12" x2="9" y2="12"/>
-              </svg>
-            </div>
+          <li class="service-card service-card--pain">
             <h3 class="service-card__title">Interventional Pain Management</h3>
             <p class="service-card__desc">Minimally invasive procedures targeting the source of pain for lasting relief.</p>
           </li>
-
-          <!-- 2. Spinal Cord Stimulation: vertebrae column with pulse wave -->
-          <li class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <!-- vertebrae: 4 stacked rounded rects -->
-                <rect x="8" y="2" width="8" height="3.5" rx="1"/>
-                <rect x="8" y="7" width="8" height="3.5" rx="1"/>
-                <rect x="8" y="12" width="8" height="3.5" rx="1"/>
-                <rect x="8" y="17" width="8" height="3.5" rx="1"/>
-                <!-- spinal canal line -->
-                <line x1="12" y1="2" x2="12" y2="20.5" stroke-dasharray="1.5 1.5"/>
-                <!-- pulse wave emanating right from middle vertebra -->
-                <path d="M16 8.75 C17.5 8.75 17.5 7 19 7 C20.5 7 20.5 8.75 22 8.75"/>
-              </svg>
-            </div>
+          <li class="service-card service-card--scs">
             <h3 class="service-card__title">Spinal Cord Stimulation</h3>
             <p class="service-card__desc">Advanced neuromodulation therapy that disrupts pain signals before they reach the brain.</p>
           </li>
-
-          <!-- 3. Joint Injections: two bone ends with gap, needle entering -->
-          <li class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <!-- upper bone (femur-like condyle) -->
-                <path d="M8 2 Q12 2 12 5 L12 9"/>
-                <path d="M16 2 Q12 2 12 5"/>
-                <!-- lower bone (tibia plateau) -->
-                <path d="M8 22 Q12 22 12 19 L12 15"/>
-                <path d="M16 22 Q12 22 12 19"/>
-                <!-- joint space gap dotted line -->
-                <line x1="8" y1="12" x2="16" y2="12" stroke-dasharray="1.5 1.5"/>
-                <!-- needle entering from right into joint space -->
-                <line x1="20" y1="9" x2="13.5" y2="12"/>
-                <!-- needle tip dot -->
-                <circle cx="13.5" cy="12" r="0.7" fill="currentColor" stroke="none"/>
-                <!-- syringe cap on needle -->
-                <rect x="20" y="7.5" width="2.5" height="3" rx="0.5"/>
-              </svg>
-            </div>
+          <li class="service-card service-card--joint">
             <h3 class="service-card__title">Joint Injections</h3>
             <p class="service-card__desc">Targeted corticosteroid and hyaluronic acid injections to reduce inflammation and restore mobility.</p>
           </li>
-
-          <!-- 4. Nerve Blocks: branching nerve with barrier band -->
-          <li class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <!-- main nerve trunk -->
-                <line x1="12" y1="2" x2="12" y2="10"/>
-                <!-- branch left -->
-                <path d="M12 10 Q10 13 7 15"/>
-                <!-- branch right -->
-                <path d="M12 10 Q14 13 17 15"/>
-                <!-- sub-branches left -->
-                <line x1="7" y1="15" x2="5" y2="19"/>
-                <line x1="7" y1="15" x2="9" y2="19"/>
-                <!-- sub-branches right -->
-                <line x1="17" y1="15" x2="15" y2="19"/>
-                <line x1="17" y1="15" x2="19" y2="19"/>
-                <!-- nerve nodes -->
-                <circle cx="12" cy="10" r="1.2" fill="currentColor" stroke="none"/>
-                <circle cx="7" cy="15" r="1" fill="currentColor" stroke="none"/>
-                <circle cx="17" cy="15" r="1" fill="currentColor" stroke="none"/>
-                <!-- block band across trunk -->
-                <rect x="9.5" y="6" width="5" height="2" rx="1" fill="currentColor" stroke="none" opacity="0.25"/>
-                <line x1="9.5" y1="7" x2="14.5" y2="7" stroke-width="2.5"/>
-              </svg>
-            </div>
+          <li class="service-card service-card--nerve">
             <h3 class="service-card__title">Nerve Blocks</h3>
             <p class="service-card__desc">Precise anesthetic injections that interrupt pain signals along specific nerve pathways.</p>
           </li>
-
-          <!-- 5. Regenerative Medicine (PRP): blood drop with upward sprout -->
-          <li class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <!-- blood drop shape -->
-                <path d="M12 3 C12 3 6 10 6 14.5 a6 6 0 0 0 12 0 C18 10 12 3 12 3 Z"/>
-                <!-- upward growth sprout from drop centre -->
-                <line x1="12" y1="16" x2="12" y2="11"/>
-                <!-- left leaf -->
-                <path d="M12 13.5 Q10 12 9 13 Q10 14.5 12 13.5"/>
-                <!-- right leaf -->
-                <path d="M12 12 Q14 10.5 15 11.5 Q14 13 12 12"/>
-                <!-- sprout tip arrow -->
-                <polyline points="11 11.5 12 10 13 11.5"/>
-              </svg>
-            </div>
+          <li class="service-card service-card--prp">
             <h3 class="service-card__title">Regenerative Medicine (PRP)</h3>
             <p class="service-card__desc">Platelet-rich plasma therapy harnessing your body's own healing factors to repair damaged tissue.</p>
           </li>
-
-          <!-- 6. Medication Management: pill capsule with shield overlay -->
-          <li class="service-card">
-            <div class="service-card__icon" aria-hidden="true">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <!-- pill capsule outer shape, angled 45deg -->
-                <rect x="4" y="10" width="16" height="7" rx="3.5" transform="rotate(-35 12 13.5)"/>
-                <!-- pill dividing line (middle split) -->
-                <line x1="8.5" y1="17" x2="15.5" y2="8.5"/>
-                <!-- shield behind pill (filled, lighter) -->
-                <path d="M12 2 L19 5 L19 11 C19 15 12 19 12 19 C12 19 5 15 5 11 L5 5 Z" stroke-width="1.4" opacity="0.5"/>
-                <!-- shield checkmark -->
-                <polyline points="9.5 11 11.5 13.5 15 9" stroke-width="1.6"/>
-              </svg>
-            </div>
+          <li class="service-card service-card--meds">
             <h3 class="service-card__title">Medication Management</h3>
             <p class="service-card__desc">Carefully monitored pharmacological plans designed to optimize relief while minimizing risk.</p>
           </li>
-
         </ul>
         <div class="services__cta">
           <a class="btn btn--primary" href="services.html">View All Services</a>
@@ -316,14 +196,7 @@
             </ul>
           </div>
           <div class="contact-form-wrap">
-            <form
-              class="contact-form"
-              id="contact-form"
-              action="https://formspree.io/f/xjgqajjy"
-              method="POST"
-              novalidate
-              aria-label="Appointment request form"
-            >
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/xjgqajjy" method="POST" novalidate aria-label="Appointment request form">
               <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
               <input type="hidden" name="_subject" value="New Appointment Request – Apex Pain Clinic" />
               <div class="form-row">
@@ -339,7 +212,7 @@
                 <select id="service" name="service"><option value="">Select a service…</option><option>Interventional Pain Management</option><option>Spinal Cord Stimulation</option><option>Joint Injections</option><option>Nerve Blocks</option><option>Regenerative Medicine (PRP)</option><option>Medication Management</option><option>Other / Not Sure</option></select>
               </div>
               <div class="form-group"><label for="message">Tell Us About Your Pain <span aria-hidden="true">*</span></label><textarea id="message" name="message" placeholder="Briefly describe where you're experiencing pain and how long it has been present…" required></textarea></div>
-              <p class="form-note">Fields marked <span aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required. We typically respond within one business day.</p>
+              <p class="form-note">Fields marked <span aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.</p>
               <button type="submit" class="btn btn--primary" id="form-submit-btn">Send Request</button>
               <p class="form-success" id="form-success" role="alert" aria-live="polite" hidden>✓ Thank you! We'll be in touch within one business day.</p>
               <p class="form-error" id="form-error" role="alert" aria-live="polite" hidden>Something went wrong. Please try again or call us at (305) 555-0100.</p>
@@ -375,6 +248,5 @@
   </footer>
 
   <script src="js/main.js" defer></script>
-
 </body>
 </html>
