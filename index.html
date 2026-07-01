@@ -16,19 +16,71 @@
     <nav class="nav container" aria-label="Primary navigation">
       <a class="nav__logo" href="index.html" aria-label="Apex Pain Clinic – Home">
         <span class="nav__logo-mark" aria-hidden="true">
-          <!-- Organic spine + apex mark: flowing vertebrae column with a peak highlight -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <!-- Vertebrae: three oval discs stacked with tapered ends -->
-            <ellipse cx="12" cy="5.5" rx="4.5" ry="2" />
-            <ellipse cx="12" cy="12" rx="4.5" ry="2" />
-            <ellipse cx="12" cy="18.5" rx="4.5" ry="2" />
-            <!-- Central canal / cord running through -->
-            <line x1="12" y1="3.5" x2="12" y2="20.5" stroke-width="1" opacity="0.5" />
-            <!-- Lateral processes (wings) on middle vertebra for character -->
-            <line x1="7.5" y1="12" x2="5" y2="10.5" />
-            <line x1="16.5" y1="12" x2="19" y2="10.5" />
-            <!-- Apex highlight dot at top -->
-            <circle cx="12" cy="3" r="1.2" fill="currentColor" stroke="none" />
+          <!--
+            APEX MARK: A stylised spinal column that forms a subtle
+            upward peak (“Apex”) at the top.
+            - Three filled vertebral discs, tapered like real anatomy
+            - A central canal rendered as a teal–white gradient bar
+            - Bilateral transverse processes on top + bottom discs
+            - Filled apex chevron at the crown
+            All shapes use fills (not just strokes) for crispness at small sizes.
+          -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
+            <defs>
+              <!-- Teal-to-white gradient for the central canal -->
+              <linearGradient id="canalGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#7ee8e4" stop-opacity="1"/>
+                <stop offset="100%" stop-color="#20b2aa" stop-opacity="0.6"/>
+              </linearGradient>
+              <!-- Subtle glow filter for the canal -->
+              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stdDeviation="0.6" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <!-- === TOP VERTEBRAL DISC === -->
+            <!-- Main body: wide in centre, tapered at ends -->
+            <path d="M16 4 C13 4 10.5 5.2 10.5 6.5 C10.5 7.8 13 9 16 9 C19 9 21.5 7.8 21.5 6.5 C21.5 5.2 19 4 16 4Z"
+                  fill="rgba(255,255,255,0.92)"/>
+            <!-- Left transverse process -->
+            <path d="M10.5 6.2 C9 5.8 7 5.5 6 6 C7 6.3 9 6.6 10.5 6.8Z"
+                  fill="rgba(255,255,255,0.65)"/>
+            <!-- Right transverse process -->
+            <path d="M21.5 6.2 C23 5.8 25 5.5 26 6 C25 6.3 23 6.6 21.5 6.8Z"
+                  fill="rgba(255,255,255,0.65)"/>
+
+            <!-- === MIDDLE VERTEBRAL DISC === -->
+            <path d="M16 13 C12.5 13 9.5 14.4 9.5 16 C9.5 17.6 12.5 19 16 19 C19.5 19 22.5 17.6 22.5 16 C22.5 14.4 19.5 13 16 13Z"
+                  fill="rgba(255,255,255,0.92)"/>
+            <!-- Left process -->
+            <path d="M9.5 15.6 C7.5 15 5 14.8 4 15.5 C5 15.9 7.5 16.2 9.5 16.4Z"
+                  fill="rgba(255,255,255,0.6)"/>
+            <!-- Right process -->
+            <path d="M22.5 15.6 C24.5 15 27 14.8 28 15.5 C27 15.9 24.5 16.2 22.5 16.4Z"
+                  fill="rgba(255,255,255,0.6)"/>
+
+            <!-- === BOTTOM VERTEBRAL DISC === -->
+            <path d="M16 23 C13 23 10.5 24.2 10.5 25.5 C10.5 26.8 13 28 16 28 C19 28 21.5 26.8 21.5 25.5 C21.5 24.2 19 23 16 23Z"
+                  fill="rgba(255,255,255,0.92)"/>
+            <!-- Left process -->
+            <path d="M10.5 25.2 C9 24.8 7 24.5 6 25 C7 25.3 9 25.6 10.5 25.8Z"
+                  fill="rgba(255,255,255,0.65)"/>
+            <!-- Right process -->
+            <path d="M21.5 25.2 C23 24.8 25 24.5 26 25 C25 25.3 23 25.6 21.5 25.8Z"
+                  fill="rgba(255,255,255,0.65)"/>
+
+            <!-- === CENTRAL SPINAL CANAL (gradient glow bar) === -->
+            <rect x="14.8" y="4" width="2.4" height="24"
+                  rx="1.2"
+                  fill="url(#canalGrad)"
+                  filter="url(#glow)"
+                  opacity="0.9"/>
+
+            <!-- === APEX CHEVRON (crown peak) === -->
+            <!-- Two angled lines meeting at a point above the top disc -->
+            <path d="M16 1.5 L13.2 4.2 L16 3.6 L18.8 4.2 Z"
+                  fill="#7ee8e4"/>
           </svg>
         </span>
         <span>Apex Pain Clinic</span>
