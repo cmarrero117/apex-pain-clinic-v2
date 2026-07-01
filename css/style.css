@@ -411,8 +411,35 @@ body {
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-8); }
 .doctor-card { background: var(--color-white); border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: hidden; transition: transform var(--transition-normal), box-shadow var(--transition-normal); }
 .doctor-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-.doctor-card__avatar { background: var(--color-gray-100); height: 180px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.doctor-card__avatar {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--color-gray-100);
+}
 .doctor-card__avatar svg { width: 100%; height: 100%; display: block; }
+
+/* Initials-based colored avatar */
+.avatar-initials {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: var(--avatar-bg, var(--color-primary));
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.9), 0 0 0 6px var(--avatar-ring, var(--color-accent));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 1.75rem;
+  font-weight: var(--font-weight-bold);
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  user-select: none;
+  flex-shrink: 0;
+}
+
 .doctor-card__body { padding: var(--space-6); }
 .doctor-card__name { font-size: var(--text-xl); font-weight: var(--font-weight-bold); color: var(--color-gray-900); margin-bottom: var(--space-1); }
 .doctor-card__specialty { font-size: var(--text-sm); font-weight: var(--font-weight-semibold); color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: var(--space-4); }
@@ -761,6 +788,9 @@ body {
   /* Team card body */
   .doctor-card__body { padding: var(--space-4); }
   .doctor-card__name { font-size: var(--text-lg); }
+
+  /* Avatar initials scale down on small screens */
+  .avatar-initials { width: 80px; height: 80px; font-size: 1.4rem; }
 }
 
 /* Reduced motion */
