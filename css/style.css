@@ -359,25 +359,23 @@ body {
 .stat__label { font-size: var(--text-sm); color: var(--color-text-muted); font-weight: var(--font-weight-medium); margin-top: var(--space-1); }
 .stat--large .stat__number { font-size: clamp(3rem, 5vw, 4.5rem); }
 .stat--large .stat__label { font-size: var(--text-base); margin-top: var(--space-2); }
-.teaser__avatar-row { display: flex; gap: var(--space-6); justify-content: center; }
+
+/* Avatar row — neutral wrapper, lets .avatar-initials render with full ring */
+.teaser__avatar-row {
+  display: flex;
+  gap: var(--space-8);
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-6) 0;
+}
 .avatar-placeholder {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: var(--color-gray-100);
-  border: 4px solid var(--color-white);
-  box-shadow: 0 0 0 3px var(--color-primary), var(--shadow-md);
-  overflow: hidden;
-  transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-normal);
 }
 .avatar-placeholder:hover {
-  box-shadow: 0 0 0 3px var(--color-accent), var(--shadow-lg);
-  transform: translateY(-3px);
-}
-.avatar-placeholder svg {
-  width: 100%;
-  height: 100%;
-  display: block;
+  transform: translateY(-4px);
 }
 
 /* =============================================
@@ -416,7 +414,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   background: var(--color-gray-100);
 }
 .doctor-card__avatar svg { width: 100%; height: 100%; display: block; }
@@ -427,7 +425,7 @@ body {
   height: 96px;
   border-radius: 50%;
   background: var(--avatar-bg, var(--color-primary));
-  box-shadow: 0 0 0 4px rgba(255,255,255,0.9), 0 0 0 6px var(--avatar-ring, var(--color-accent));
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.9), 0 0 0 7px var(--avatar-ring, var(--color-accent));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -728,9 +726,8 @@ body {
   .stats-band__grid { grid-template-columns: repeat(2, 1fr); }
   .stats-band { padding-block: var(--space-10); }
 
-  /* Teaser */
-  .teaser__avatar-row { gap: var(--space-4); }
-  .avatar-placeholder { width: 80px; height: 80px; }
+  /* Teaser avatar row */
+  .teaser__avatar-row { gap: var(--space-5); }
 
   /* Contact */
   .contact-info,
@@ -790,7 +787,8 @@ body {
   .doctor-card__name { font-size: var(--text-lg); }
 
   /* Avatar initials scale down on small screens */
-  .avatar-initials { width: 80px; height: 80px; font-size: 1.4rem; }
+  .avatar-initials { width: 76px; height: 76px; font-size: 1.3rem; }
+  .teaser__avatar-row { gap: var(--space-4); }
 }
 
 /* Reduced motion */
