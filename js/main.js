@@ -1,54 +1,84 @@
 /* =============================================
-   MAIN JS – Apex Pain Clinic v2
+   MAIN.JS – Apex Pain Clinic v2
+   Handles:
+   1. Mobile nav toggle
+   2. Scroll-triggered fade-in animations (IntersectionObserver)
+   3. Active nav link detection
    ============================================= */
 
-'use strict';
+(function () {
+  'use strict';
 
-// --- Mobile Nav Toggle ---
-const navToggle = document.querySelector('.nav__toggle');
-const navLinks  = document.querySelector('.nav__links');
+  /* ---- 1. MOBILE NAV TOGGLE ---- */
+  const toggle = document.querySelector('.nav__toggle');
+  const navLinks = document.querySelector('.nav__links');
 
-if (navToggle && navLinks) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('is-open');
-    navToggle.setAttribute('aria-expanded', isOpen);
-    navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-  });
-
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
-      navToggle.setAttribute('aria-label', 'Open navigation menu');
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+      toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
     });
-  });
-}
 
-// --- Sticky nav shadow on scroll ---
-const header = document.querySelector('.site-header');
-if (header) {
-  window.addEventListener('scroll', () => {
-    header.style.boxShadow = window.scrollY > 10
-      ? 'var(--shadow-md)'
-      : 'var(--shadow-sm)';
-  }, { passive: true });
-}
+    // Close nav when a link is clicked
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Open navigation menu');
+      });
+    });
 
-// --- Appointment form demo submission ---
-const appointmentForm = document.querySelector('#appointment-form');
-const formSuccess = document.querySelector('#form-success');
+    // Close on outside click
+    document.addEventListener('click', function (e) {
+      if (!toggle.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
-if (appointmentForm && formSuccess) {
-  appointmentForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+  /* ---- 2. SCROLL-TRIGGERED FADE-IN ---- */
+  // Elements that should animate in on scroll
+  const animTargets = document.querySelectorAll(
+    '.service-card, .doctor-card, .teaser__inner, .about-mission, ' +
+    '.stats-band__grid, .contact__grid, .section__header, .page-banner'
+  );
 
-    if (!appointmentForm.checkValidity()) {
-      appointmentForm.reportValidity();
-      return;
+  if ('IntersectionObserver' in window) {
+    // Respect prefers-reduced-motion
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!prefersReduced) {
+      // Add initial hidden state
+      animTargets.forEach(function (el) {
+        el.classList.add('fade-up');
+      });
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target); // animate once only
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        }
+      );
+
+      animTargets.forEach(function (el) {
+        observer.observe(el);
+      });
     }
+  }
 
-    appointmentForm.reset();
-    formSuccess.hidden = false;
-    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  });
-}
+  /* ---- 3. ACTIVE NAV LINK (auto-detect for index.html) ---- */
+  // For inner pages, aria-current="page" is set in HTML.
+  // For index.html, highlight the Home logo as active (no dedicated nav link).
+  // Nothing extra needed — the CSS [aria-current="page"] rule handles it.
+
+})();

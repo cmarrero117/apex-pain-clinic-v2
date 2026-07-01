@@ -628,6 +628,27 @@ body {
 .footer__legal a:hover { color: rgba(255,255,255,0.7); }
 
 /* =============================================
+   SCROLL ANIMATIONS
+   ============================================= */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Stagger cards within a grid */
+.services__grid .fade-up:nth-child(2),
+.team-grid .fade-up:nth-child(2) { transition-delay: 0.10s; }
+.services__grid .fade-up:nth-child(3),
+.team-grid .fade-up:nth-child(3) { transition-delay: 0.20s; }
+.services__grid .fade-up:nth-child(4) { transition-delay: 0.05s; }
+.services__grid .fade-up:nth-child(5) { transition-delay: 0.15s; }
+.services__grid .fade-up:nth-child(6) { transition-delay: 0.25s; }
+
+/* =============================================
    RESPONSIVE — TABLET (max 900px)
    ============================================= */
 @media (max-width: 900px) {
