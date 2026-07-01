@@ -4,6 +4,7 @@
    1. Mobile nav toggle
    2. Scroll-triggered fade-in animations (IntersectionObserver)
    3. Active nav link detection
+   4. Contact form – async Formspree submission
    ============================================= */
 
 (function () {
@@ -20,7 +21,6 @@
       toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
     });
 
-    // Close nav when a link is clicked
     navLinks.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         navLinks.classList.remove('is-open');
@@ -29,7 +29,6 @@
       });
     });
 
-    // Close on outside click
     document.addEventListener('click', function (e) {
       if (!toggle.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('is-open');
@@ -39,18 +38,15 @@
   }
 
   /* ---- 2. SCROLL-TRIGGERED FADE-IN ---- */
-  // Elements that should animate in on scroll
   const animTargets = document.querySelectorAll(
     '.service-card, .doctor-card, .teaser__inner, .about-mission, ' +
     '.stats-band__grid, .contact__grid, .section__header, .page-banner'
   );
 
   if ('IntersectionObserver' in window) {
-    // Respect prefers-reduced-motion
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (!prefersReduced) {
-      // Add initial hidden state
       animTargets.forEach(function (el) {
         el.classList.add('fade-up');
       });
@@ -60,14 +56,11 @@
           entries.forEach(function (entry) {
             if (entry.isIntersecting) {
               entry.target.classList.add('is-visible');
-              observer.unobserve(entry.target); // animate once only
+              observer.unobserve(entry.target);
             }
           });
         },
-        {
-          threshold: 0.12,
-          rootMargin: '0px 0px -40px 0px'
-        }
+        { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
       );
 
       animTargets.forEach(function (el) {
@@ -76,9 +69,55 @@
     }
   }
 
-  /* ---- 3. ACTIVE NAV LINK (auto-detect for index.html) ---- */
-  // For inner pages, aria-current="page" is set in HTML.
-  // For index.html, highlight the Home logo as active (no dedicated nav link).
-  // Nothing extra needed — the CSS [aria-current="page"] rule handles it.
+  /* ---- 3. ACTIVE NAV LINK ---- */
+  // aria-current="page" is set in HTML on inner pages.
+  // Homepage has no dedicated nav link, so nothing extra needed.
+
+  /* ---- 4. CONTACT FORM – ASYNC FORMSPREE ---- */
+  const form      = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('form-submit-btn');
+  const successEl = document.getElementById('form-success');
+  const errorEl   = document.getElementById('form-error');
+
+  if (form && submitBtn) {
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      // Basic HTML5 validation
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      // Loading state
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+      if (successEl) successEl.hidden = true;
+      if (errorEl)   errorEl.hidden   = true;
+
+      try {
+        const response = await fetch(form.action, {
+          method:  'POST',
+          headers: { 'Accept': 'application/json' },
+          body:    new FormData(form)
+        });
+
+        if (response.ok) {
+          // Success
+          form.reset();
+          if (successEl) successEl.hidden = false;
+          submitBtn.textContent = 'Sent!';
+          submitBtn.disabled = false;
+        } else {
+          throw new Error('Server error');
+        }
+      } catch (err) {
+        // Error
+        if (errorEl) errorEl.hidden = false;
+        submitBtn.textContent = 'Send Request';
+        submitBtn.disabled = false;
+      }
+    });
+  }
 
 })();
