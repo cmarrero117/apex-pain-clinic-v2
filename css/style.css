@@ -345,7 +345,7 @@ body {
   background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&auto=format&fit=crop&q=90');
 }
 .service-card--prp::before {
-  background-image: url('https://images.pexels.com/photos/5206938/pexels-photo-5206938.jpeg?auto=compress&cs=tinysrgb&w=1920&q=90');
+  background-image: url('https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=1920&auto=format&fit=crop&q=90');
 }
 .service-card--meds::before {
   background-image: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1920&auto=format&fit=crop&q=90');
