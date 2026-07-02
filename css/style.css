@@ -115,32 +115,64 @@ body {
   height: 70px;
   gap: var(--space-8);
 }
+
+/* --- Option C Logo: Horizontal Emblem --- */
 .nav__logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: var(--text-xl);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-primary);
-  letter-spacing: -0.02em;
-  flex-shrink: 0;
+  gap: var(--space-3);
   text-decoration: none;
+  flex-shrink: 0;
+  transition: opacity var(--transition-fast);
 }
-.nav__logo-mark {
+.nav__logo:hover { opacity: 0.82; }
+.nav__logo:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
+/* Vertebra SVG icon */
+.nav__logo-emblem {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  background: var(--color-primary);
-  border-radius: 12px;
   flex-shrink: 0;
-  color: var(--color-white);
-  transition: background var(--transition-fast);
-  overflow: hidden;
 }
-.nav__logo:hover .nav__logo-mark { background: var(--color-accent); }
-.nav__logo-mark svg { width: 28px; height: 28px; }
+.nav__logo-vertebra {
+  width: 52px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 1px 3px rgba(26,92,138,0.18));
+  transition: filter var(--transition-fast);
+}
+.nav__logo:hover .nav__logo-vertebra {
+  filter: drop-shadow(0 2px 6px rgba(42,171,187,0.35));
+}
+
+/* Wordmark stacked text */
+.nav__logo-wordmark {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1;
+}
+.nav__logo-apex {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  line-height: 1;
+  font-family: var(--font-sans);
+}
+.nav__logo-sub {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: var(--font-sans);
+}
 
 .nav__links { display: flex; align-items: center; gap: var(--space-8); }
 .nav__links a {
@@ -646,15 +678,19 @@ body {
   .doctor-card__body { padding: var(--space-4); }
   .footer__main { grid-template-columns: 1fr; gap: var(--space-8); padding-block: var(--space-10); }
   .footer__bottom { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+  .nav__logo-vertebra { width: 40px; }
+  .nav__logo-apex { font-size: 1.15rem; }
+  .nav__logo-sub { font-size: 0.65rem; }
 }
 
 /* =============================================
    RESPONSIVE — SMALL MOBILE (max 480px)
    ============================================= */
 @media (max-width: 480px) {
-  .nav__logo { font-size: var(--text-lg); }
-  .nav__logo-mark { width: 36px; height: 36px; border-radius: 10px; }
-  .nav__logo-mark svg { width: 22px; height: 22px; }
+  .nav__logo { gap: var(--space-2); }
+  .nav__logo-vertebra { width: 34px; }
+  .nav__logo-apex { font-size: 1rem; letter-spacing: 0.09em; }
+  .nav__logo-sub { font-size: 0.6rem; letter-spacing: 0.14em; }
   .hero { min-height: 70vh; }
   .hero__content { padding-block: var(--space-10); }
   .hero__heading { margin-bottom: var(--space-4); }

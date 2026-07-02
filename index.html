@@ -15,34 +15,32 @@
 
   <header class="site-header" role="banner">
     <nav class="nav container" aria-label="Primary navigation">
+
+      <!-- LOGO: Option C — horizontal wordmark with vertebra accent -->
       <a class="nav__logo" href="index.html" aria-label="Apex Pain Clinic – Home">
-        <span class="nav__logo-mark" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
-            <defs>
-              <linearGradient id="canalGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%"  stop-color="#7ee8e4" stop-opacity="1"/>
-                <stop offset="100%" stop-color="#20b2aa" stop-opacity="0.6"/>
-              </linearGradient>
-              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="0.6" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-            <path d="M16 4 C13 4 10.5 5.2 10.5 6.5 C10.5 7.8 13 9 16 9 C19 9 21.5 7.8 21.5 6.5 C21.5 5.2 19 4 16 4Z" fill="rgba(255,255,255,0.92)"/>
-            <path d="M10.5 6.2 C9 5.8 7 5.5 6 6 C7 6.3 9 6.6 10.5 6.8Z" fill="rgba(255,255,255,0.65)"/>
-            <path d="M21.5 6.2 C23 5.8 25 5.5 26 6 C25 6.3 23 6.6 21.5 6.8Z" fill="rgba(255,255,255,0.65)"/>
-            <path d="M16 13 C12.5 13 9.5 14.4 9.5 16 C9.5 17.6 12.5 19 16 19 C19.5 19 22.5 17.6 22.5 16 C22.5 14.4 19.5 13 16 13Z" fill="rgba(255,255,255,0.92)"/>
-            <path d="M9.5 15.6 C7.5 15 5 14.8 4 15.5 C5 15.9 7.5 16.2 9.5 16.4Z" fill="rgba(255,255,255,0.6)"/>
-            <path d="M22.5 15.6 C24.5 15 27 14.8 28 15.5 C27 15.9 24.5 16.2 22.5 16.4Z" fill="rgba(255,255,255,0.6)"/>
-            <path d="M16 23 C13 23 10.5 24.2 10.5 25.5 C10.5 26.8 13 28 16 28 C19 28 21.5 26.8 21.5 25.5 C21.5 24.2 19 23 16 23Z" fill="rgba(255,255,255,0.92)"/>
-            <path d="M10.5 25.2 C9 24.8 7 24.5 6 25 C7 25.3 9 25.6 10.5 25.8Z" fill="rgba(255,255,255,0.65)"/>
-            <path d="M21.5 25.2 C23 24.8 25 24.5 26 25 C25 25.3 23 25.6 21.5 25.8Z" fill="rgba(255,255,255,0.65)"/>
-            <rect x="14.8" y="4" width="2.4" height="24" rx="1.2" fill="url(#canalGrad)" filter="url(#glow)" opacity="0.9"/>
-            <path d="M16 1.5 L13.2 4.2 L16 3.6 L18.8 4.2 Z" fill="#7ee8e4"/>
+        <span class="nav__logo-emblem" aria-hidden="true">
+          <!-- Vertebra accent SVG -->
+          <svg class="nav__logo-vertebra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 20" aria-hidden="true">
+            <!-- Left transverse process -->
+            <path d="M4 9 Q2 7 0 8 Q2 10 4 11Z" fill="#2AABBB" opacity="0.7"/>
+            <!-- Right transverse process -->
+            <path d="M40 9 Q42 7 44 8 Q42 10 40 11Z" fill="#2AABBB" opacity="0.7"/>
+            <!-- Vertebral body -->
+            <rect x="6" y="5" width="32" height="10" rx="5" fill="#1A5C8A"/>
+            <!-- Spinal canal (teal highlight through center) -->
+            <rect x="19" y="6.5" width="6" height="7" rx="3" fill="#2AABBB" opacity="0.9"/>
+            <!-- Left pedicle connector -->
+            <rect x="6" y="8" width="13" height="4" rx="2" fill="#134770"/>
+            <!-- Right pedicle connector -->
+            <rect x="25" y="8" width="13" height="4" rx="2" fill="#134770"/>
           </svg>
         </span>
-        <span>Apex Pain Clinic</span>
+        <span class="nav__logo-wordmark">
+          <span class="nav__logo-apex">APEX</span>
+          <span class="nav__logo-sub">Pain Clinic</span>
+        </span>
       </a>
+
       <button class="nav__toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="hamburger"></span>
         <span class="hamburger"></span>
@@ -102,27 +100,27 @@
           <p class="section__subtext">We offer a full spectrum of interventional and non-interventional treatments tailored to your condition and lifestyle.</p>
         </div>
         <ul class="services__grid" role="list">
-          <li class="service-card service-card--pain">
+          <li class="service-card service-card--pain fade-up">
             <h3 class="service-card__title">Interventional Pain Management</h3>
             <p class="service-card__desc">Minimally invasive procedures targeting the source of pain for lasting relief.</p>
           </li>
-          <li class="service-card service-card--scs">
+          <li class="service-card service-card--scs fade-up">
             <h3 class="service-card__title">Spinal Cord Stimulation</h3>
             <p class="service-card__desc">Advanced neuromodulation therapy that disrupts pain signals before they reach the brain.</p>
           </li>
-          <li class="service-card service-card--joint">
+          <li class="service-card service-card--joint fade-up">
             <h3 class="service-card__title">Joint Injections</h3>
             <p class="service-card__desc">Targeted corticosteroid and hyaluronic acid injections to reduce inflammation and restore mobility.</p>
           </li>
-          <li class="service-card service-card--nerve">
+          <li class="service-card service-card--nerve fade-up">
             <h3 class="service-card__title">Nerve Blocks</h3>
             <p class="service-card__desc">Precise anesthetic injections that interrupt pain signals along specific nerve pathways.</p>
           </li>
-          <li class="service-card service-card--prp">
+          <li class="service-card service-card--prp fade-up">
             <h3 class="service-card__title">Regenerative Medicine (PRP)</h3>
             <p class="service-card__desc">Platelet-rich plasma therapy harnessing your body's own healing factors to repair damaged tissue.</p>
           </li>
-          <li class="service-card service-card--meds">
+          <li class="service-card service-card--meds fade-up">
             <h3 class="service-card__title">Medication Management</h3>
             <p class="service-card__desc">Carefully monitored pharmacological plans designed to optimize relief while minimizing risk.</p>
           </li>
