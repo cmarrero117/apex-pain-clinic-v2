@@ -333,13 +333,13 @@ body {
 
 /* Per-card image assignments */
 .service-card--pain::before {
-  background-image: url('https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=1920&auto=format&fit=crop&q=90');
+  background-image: url('https://images.pexels.com/photos/7298867/pexels-photo-7298867.jpeg?auto=compress&cs=tinysrgb&w=1920&q=90');
 }
 .service-card--scs::before {
-  background-image: url('https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1920&auto=format&fit=crop&q=90');
+  background-image: url('https://images.pexels.com/photos/13185359/pexels-photo-13185359.jpeg?auto=compress&cs=tinysrgb&w=1920&q=90');
 }
 .service-card--joint::before {
-  background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&auto=format&fit=crop&q=90');
+  background-image: url('https://images.pexels.com/photos/11349880/pexels-photo-11349880.jpeg?auto=compress&cs=tinysrgb&w=1920&q=90');
 }
 .service-card--nerve::before {
   background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&auto=format&fit=crop&q=90');
