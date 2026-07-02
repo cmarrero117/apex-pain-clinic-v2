@@ -319,13 +319,13 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.08;
+  opacity: 0.15;
   transition: opacity var(--transition-normal);
   z-index: 0;
   border-radius: inherit;
 }
 .service-card:hover::before {
-  opacity: 0.13;
+  opacity: 0.20;
 }
 
 /* Lift all direct children above the ghost layer */
@@ -333,22 +333,22 @@ body {
 
 /* Per-card image assignments */
 .service-card--pain::before {
-  background-image: url('https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=1200&auto=format&fit=crop&q=80');
+  background-image: url('https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=1920&auto=format&fit=crop&q=90');
 }
 .service-card--scs::before {
-  background-image: url('https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1200&auto=format&fit=crop&q=80');
+  background-image: url('https://images.unsplash.com/photo-1559757175-5700dde675bc?w=1920&auto=format&fit=crop&q=90');
 }
 .service-card--joint::before {
-  background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop&q=80');
+  background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1920&auto=format&fit=crop&q=90');
 }
 .service-card--nerve::before {
-  background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1200&auto=format&fit=crop&q=80');
+  background-image: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&auto=format&fit=crop&q=90');
 }
 .service-card--prp::before {
-  background-image: url('https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=1200&auto=format&fit=crop&q=80');
+  background-image: url('https://images.unsplash.com/photo-1615461066841-6116e61058f4?w=1920&auto=format&fit=crop&q=90');
 }
 .service-card--meds::before {
-  background-image: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&auto=format&fit=crop&q=80');
+  background-image: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1920&auto=format&fit=crop&q=90');
 }
 
 .service-card__title { font-size: var(--text-lg); font-weight: var(--font-weight-semibold); color: var(--color-gray-900); margin-bottom: var(--space-3); line-height: var(--line-height-tight); }
