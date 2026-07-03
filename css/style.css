@@ -116,7 +116,7 @@ body {
   gap: var(--space-8);
 }
 
-/* --- Option C Logo: Horizontal Emblem --- */
+/* --- Logo: Horizontal Emblem + Wordmark --- */
 .nav__logo {
   display: inline-flex;
   align-items: center;
@@ -132,20 +132,21 @@ body {
   border-radius: var(--radius-sm);
 }
 
-/* Vertebra SVG icon */
 .nav__logo-emblem {
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
-.nav__logo-vertebra {
-  width: 52px;
-  height: auto;
+
+/* Option B — Spine S-curve: portrait SVG (28×56 viewBox) */
+.nav__logo-spine {
+  width: 22px;      /* narrow portrait mark — 44px tall at 1:2 ratio */
+  height: 44px;
   display: block;
   filter: drop-shadow(0 1px 3px rgba(26,92,138,0.18));
   transition: filter var(--transition-fast);
 }
-.nav__logo:hover .nav__logo-vertebra {
+.nav__logo:hover .nav__logo-spine {
   filter: drop-shadow(0 2px 6px rgba(42,171,187,0.35));
 }
 
@@ -678,7 +679,8 @@ body {
   .doctor-card__body { padding: var(--space-4); }
   .footer__main { grid-template-columns: 1fr; gap: var(--space-8); padding-block: var(--space-10); }
   .footer__bottom { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
-  .nav__logo-vertebra { width: 40px; }
+  /* Spine logo mobile scale */
+  .nav__logo-spine { width: 18px; height: 36px; }
   .nav__logo-apex { font-size: 1.15rem; }
   .nav__logo-sub { font-size: 0.65rem; }
 }
@@ -688,7 +690,7 @@ body {
    ============================================= */
 @media (max-width: 480px) {
   .nav__logo { gap: var(--space-2); }
-  .nav__logo-vertebra { width: 34px; }
+  .nav__logo-spine { width: 15px; height: 30px; }
   .nav__logo-apex { font-size: 1rem; letter-spacing: 0.09em; }
   .nav__logo-sub { font-size: 0.6rem; letter-spacing: 0.14em; }
   .hero { min-height: 70vh; }
