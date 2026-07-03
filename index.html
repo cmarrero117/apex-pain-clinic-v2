@@ -6,12 +6,7 @@
   <meta name="description" content="Apex Pain Clinic – Board-certified pain management combining interventional techniques with holistic care." />
   <title>Apex Pain Clinic</title>
 
-  <!--
-    FAVICON — Option 2: Axial (top-down) cross-section of a vertebra
-    Navy rounded-square tile. White oval body at front. Two white laminar
-    arches curving to a spinous process bump at back. Teal ring + navy hole
-    = spinal canal.
-  -->
+  <!-- FAVICON — Option 2: Axial vertebra cross-section on navy tile -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a5c8a'/%3E%3Cellipse cx='16' cy='13' rx='8' ry='6' fill='%23ffffff' opacity='0.95'/%3E%3Cpath d='M8 13 C5 13 3 17 5 21 C7 24 10 25 13 24 C14.5 23.5 15 22 16 22 C17 22 17.5 23.5 19 24 C22 25 25 24 27 21 C29 17 27 13 24 13' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' fill='none' opacity='0.9'/%3E%3Cellipse cx='16' cy='26' rx='2.5' ry='2' fill='%23ffffff' opacity='0.85'/%3E%3Ccircle cx='16' cy='18' r='3.2' fill='%232aabbb' opacity='0.9'/%3E%3Ccircle cx='16' cy='18' r='1.8' fill='%231a5c8a'/%3E%3C/svg%3E" />
 
   <link rel="stylesheet" href="css/tokens.css?v=2" />
@@ -25,73 +20,130 @@
     <nav class="nav container" aria-label="Primary navigation">
 
       <!--
-        LOGO — Option 1: Stacked Vertebrae Column (lateral / side view)
-        5 vertebral bodies stacked vertically as rounded rects.
-        Widths increase from cervical (top, narrow) to lumbar (bottom, wide).
-        Horizontal tabs = transverse processes. Thin teal vertical line = spinal canal.
-        White lines in gaps = intervertebral discs.
-        viewBox: 32 × 58
+        LOGO — Option A: S-Curve Spine Column
+        ───────────────────────────────────────────
+        Five vertebral bodies drawn as convex paths (bowed anterior face),
+        each drifting along a natural S-curve:
+          - Cervical (top 2): lean left — cervical lordosis
+          - Thoracic (middle): straight/lean right — thoracic kyphosis
+          - Lumbar (bottom 2): lean left — lumbar lordosis
+        Each body has a short spinous process spike projecting right.
+        Thin teal S-curve canal line weaves behind the bodies.
+        Disc-space gaps (3px) between each body.
+        Transverse process nubs extend left from each body.
+        viewBox: 36 wide × 62 tall
       -->
       <a class="nav__logo" href="index.html" aria-label="Apex Pain Clinic – Home">
         <span class="nav__logo-emblem" aria-hidden="true">
           <svg
             class="nav__logo-spine"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 58"
+            viewBox="0 0 36 64"
             fill="none"
             aria-hidden="true"
           >
             <defs>
-              <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%"   stop-color="#2aabbb"/>
+              <linearGradient id="vbGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#2aabbb"/>
                 <stop offset="100%" stop-color="#1a5c8a"/>
               </linearGradient>
-              <linearGradient id="canalGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%"   stop-color="#7ee8e4"/>
+              <linearGradient id="cGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%"  stop-color="#7ee8e4"/>
                 <stop offset="100%" stop-color="#2aabbb"/>
               </linearGradient>
             </defs>
 
-            <!-- V1 — Cervical (narrowest) -->
-            <rect x="8"  y="1"  width="16" height="7" rx="2.5" fill="url(#bodyGrad)"/>
-            <line x1="8"  y1="4.5" x2="3"  y2="4.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-            <line x1="24" y1="4.5" x2="29" y2="4.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-
-            <!-- V2 — Upper thoracic -->
-            <rect x="7"  y="11" width="18" height="7" rx="2.5" fill="url(#bodyGrad)"/>
-            <line x1="7"  y1="14.5" x2="2"  y2="14.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-            <line x1="25" y1="14.5" x2="30" y2="14.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-
-            <!-- V3 — Mid thoracic -->
-            <rect x="6"  y="21" width="20" height="7" rx="2.5" fill="url(#bodyGrad)"/>
-            <line x1="6"  y1="24.5" x2="1"  y2="24.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-            <line x1="26" y1="24.5" x2="31" y2="24.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-
-            <!-- V4 — Upper lumbar -->
-            <rect x="5"  y="31" width="22" height="7" rx="2.5" fill="url(#bodyGrad)"/>
-            <line x1="5"  y1="34.5" x2="1"  y2="34.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-            <line x1="27" y1="34.5" x2="31" y2="34.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-
-            <!-- V5 — Lower lumbar / sacral base (widest) -->
-            <rect x="4"  y="41" width="24" height="7" rx="2.5" fill="url(#bodyGrad)"/>
-            <line x1="4"  y1="44.5" x2="1"  y2="44.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-            <line x1="28" y1="44.5" x2="31" y2="44.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
-
-            <!-- Spinal canal line — runs through center of all bodies -->
-            <line
-              x1="16" y1="1"
-              x2="16" y2="48"
-              stroke="url(#canalGrad)"
-              stroke-width="1.5"
+            <!--
+              SPINAL CANAL S-CURVE
+              Drawn first (behind bodies).
+              Cervical: curves left (anterior convexity left)
+              Thoracic: curves right
+              Lumbar: curves left again
+              Path runs top-center to bottom-center with natural spinal curvature.
+            -->
+            <path
+              d="M19 2
+                 C17 2 13 5 13 9
+                 C13 13 19 15 19 19
+                 C19 23 15 25 15 29
+                 C15 33 20 35 20 39
+                 C20 43 17 46 17 50
+                 C17 54 18 58 18 60"
+              stroke="url(#cGrad)"
+              stroke-width="1.8"
               stroke-linecap="round"
-              opacity="0.7"
+              opacity="0.65"
             />
 
-            <!-- Disc spaces — white hint lines between vertebrae -->
-            <line x1="9"  y1="9"  x2="23" y2="9"  stroke="white" stroke-width="1" opacity="0.35"/>
-            <line x1="8"  y1="19" x2="24" y2="19" stroke="white" stroke-width="1" opacity="0.35"/>
-            <line x1="7"  y1="29" x2="25" y2="29" stroke="white" stroke-width="1" opacity="0.35"/>
-            <line x1="6"  y1="39" x2="26" y2="39" stroke="white" stroke-width="1" opacity="0.35"/>
+            <!--
+              VERTEBRAL BODIES
+              Each body is a filled path: convex anterior face (left side bowed left),
+              flat/slightly concave posterior face (right side).
+              Bodies follow the S-curve x-positions:
+                V1 cervical:  cx ~13, cy 4
+                V2 cervical:  cx ~13, cy 12
+                V3 thoracic:  cx ~18, cy 21  (shifts right)
+                V4 lumbar:    cx ~19, cy 31  (stays right)
+                V5 lumbar:    cx ~17, cy 42  (shifts back left)
+
+              Body shape per vertebra (path):
+                Top-left → top-right (flat top)
+                Top-right → bottom-right (flat/slight concave posterior)
+                Bottom-right → bottom-left (flat bottom)
+                Bottom-left → top-left (convex anterior, bezier bulge left)
+
+              Spinous process: short line/path projecting right from posterior face midpoint.
+              Transverse process: short nub projecting left from anterior face midpoint.
+              Disc space: implicit in the 3px gap between bodies.
+            -->
+
+            <!-- V1 — Cervical 1 (leans left, narrow) -->
+            <!-- Body: x 7–22, y 1–8 — anterior left, posterior right -->
+            <path d="M22 1 L22 8 L15 8 C11 8 9 6.5 9 4.5 C9 2.5 11 1 15 1 Z"
+              fill="url(#vbGrad)" opacity="0.95"/>
+            <!-- Spinous process (projects right from posterior) -->
+            <path d="M22 4 L28 3.5" stroke="#1a5c8a" stroke-width="1.8" stroke-linecap="round"/>
+            <!-- Transverse process nub (projects left) -->
+            <path d="M9 4.5 L5 4" stroke="#1a5c8a" stroke-width="1.6" stroke-linecap="round"/>
+            <!-- Disc space below V1 -->
+            <line x1="10" y1="9.5" x2="22" y2="9.5" stroke="#7ee8e4" stroke-width="0.8" opacity="0.45"/>
+
+            <!-- V2 — Cervical 2 (still leans left, slightly wider) -->
+            <path d="M22 11 L22 18 L15 18 C10 18 8 16.5 8 14.5 C8 12.5 10 11 15 11 Z"
+              fill="url(#vbGrad)" opacity="0.93"/>
+            <path d="M22 14.5 L29 14" stroke="#1a5c8a" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M8 14.5 L4 14" stroke="#1a5c8a" stroke-width="1.6" stroke-linecap="round"/>
+            <line x1="9" y1="19.5" x2="22" y2="19.5" stroke="#7ee8e4" stroke-width="0.8" opacity="0.45"/>
+
+            <!-- V3 — Thoracic (shifts right, wider, more kyphosis) -->
+            <path d="M26 21 L26 29 L18 29 C13 29 11 27 11 25 C11 23 13 21 18 21 Z"
+              fill="url(#vbGrad)" opacity="0.92"/>
+            <path d="M26 25 L33 24.5" stroke="#1a5c8a" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M11 25 L6 24.5" stroke="#1a5c8a" stroke-width="1.6" stroke-linecap="round"/>
+            <line x1="12" y1="30.5" x2="26" y2="30.5" stroke="#7ee8e4" stroke-width="0.8" opacity="0.45"/>
+
+            <!-- V4 — Lumbar upper (wide, shifts slightly left, tall body) -->
+            <path d="M27 32 L27 41 L18 41 C12 41 10 39 10 36.5 C10 34 12 32 18 32 Z"
+              fill="url(#vbGrad)" opacity="0.94"/>
+            <path d="M27 36.5 L34 36" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
+            <path d="M10 36.5 L4 36" stroke="#1a5c8a" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="11" y1="42.5" x2="27" y2="42.5" stroke="#7ee8e4" stroke-width="0.8" opacity="0.45"/>
+
+            <!-- V5 — Lumbar lower / sacral base (widest, returns left) -->
+            <path d="M25 44 L25 54 L16 54 C10 54 8 52 8 49 C8 46 10 44 16 44 Z"
+              fill="url(#vbGrad)" opacity="0.96"/>
+            <path d="M25 49 L32 48.5" stroke="#1a5c8a" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8 49 L3 48.5" stroke="#1a5c8a" stroke-width="1.8" stroke-linecap="round"/>
+
+            <!--
+              HIGHLIGHT DOTS on each body's canal point
+              (where the teal canal line intersects each vertebral body center)
+            -->
+            <circle cx="19" cy="4.5"  r="1.2" fill="#7ee8e4" opacity="0.9"/>
+            <circle cx="19" cy="14.5" r="1.2" fill="#7ee8e4" opacity="0.9"/>
+            <circle cx="22" cy="25"   r="1.2" fill="#7ee8e4" opacity="0.9"/>
+            <circle cx="22" cy="36.5" r="1.2" fill="#7ee8e4" opacity="0.9"/>
+            <circle cx="20" cy="49"   r="1.2" fill="#7ee8e4" opacity="0.9"/>
 
           </svg>
         </span>
