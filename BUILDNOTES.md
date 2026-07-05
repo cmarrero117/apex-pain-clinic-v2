@@ -3,6 +3,7 @@
 **Live URL:** https://cmarrero117.github.io/apex-pain-clinic-v2/  
 **Repo:** https://github.com/cmarrero117/apex-pain-clinic-v2  
 **Build completed:** June 29, 2026  
+**Last updated:** July 5, 2026  
 **Site type:** Informational / Lead Generation
 
 ---
@@ -112,15 +113,37 @@ apex-pain-clinic-v2/
 
 ---
 
+## Post-Build Fixes (July 5, 2026)
+
+### Logo & Favicon Consistency Fix
+- **Problem:** `services.html`, `about.html`, and `team.html` had the old vertical spine SVG logo and incorrect favicon from an earlier design iteration. Only `index.html` had the correct gradient tile logo.
+- **Fix:** All three inner pages updated with the correct square `36×36` gradient tile nav logo (`#1e7a8c → #0e4a6e`) and matching `32×32` favicon. Each page uses a unique gradient ID (`tileGrad-sv`, `tileGrad-ab`, `tileGrad-tm`) to avoid SVG gradient conflicts.
+- **CSS cache-busting:** All inner pages updated to `tokens.css?v=2` and `style.css?v=2`.
+- **Commit:** `0154fa3` — all 4 pages now visually consistent.
+
+---
+
 ## Open Items / Future Enhancements
 
-- [ ] Replace placeholder doctor avatar SVGs with real photos
+- [ ] Replace placeholder doctor avatar initials with real/AI-generated headshot photos
 - [ ] Connect contact form to a backend (e.g. Formspree, Netlify Forms)
 - [ ] Add a Testimonials / Reviews section to index.html
 - [ ] Add a Locations page or map embed
 - [ ] Add Open Graph meta tags for social sharing previews
 - [ ] Consider adding a blog/articles section for SEO
 - [ ] Privacy Policy and Terms of Use pages (currently placeholder `#` links)
+
+---
+
+## Next Project: Client CMS
+
+This site is earmarked as the **first test case** for a custom-built CMS system. The plan:
+
+- Build a web app CMS (separate repo) where clients can log in and edit their site's live content (text, headings, paragraphs) and publish instantly
+- Admin dashboard (owner view) shows all clients and all sites in one place, fully siloed
+- Stack: **GitHub + Vercel + MongoDB**
+- Apex Pain Clinic will be migrated from GitHub Pages → Vercel and its content wired to MongoDB as the first proof of concept
+- Reference video: https://youtu.be/Q_K3k_ge8NA
 
 ---
 
@@ -132,3 +155,4 @@ apex-pain-clinic-v2/
 4. Duplicate trust bar items in HTML (not JS) for CSS-only animation loops
 5. Apply `aria-required` alongside HTML `required` from the start
 6. Two-breakpoint mobile strategy (`≤768px` + `≤480px`) is sufficient for this site type
+7. Use unique SVG gradient IDs per page (`tileGrad-sv`, `tileGrad-ab`, `tileGrad-tm`) to prevent gradient conflicts when the same inline SVG logo appears across multiple pages
