@@ -5,6 +5,9 @@
   "seo-title-services": "Services – Apex Pain Clinic",
   "seo-description-services": "Pain management services at Apex Pain Clinic – interventional treatments, nerve blocks, PRP, and more.",
 
+  "seo-title-about": "About – Apex Pain Clinic",
+  "seo-description-about": "About Apex Pain Clinic – Our mission, values, and story.",
+
   "hero-headline": "Reclaim Your Life<br>From Chronic Pain",
   "hero-subheadline": "Personalized, compassionate care combining advanced interventional techniques with holistic treatment plans.",
   "hero-cta": "Book a Consultation",
@@ -17,21 +20,42 @@
 
   "service-title-pain": "Interventional Pain Management",
   "service-desc-pain": "Minimally invasive procedures targeting the source of pain for lasting relief without the risks of open surgery.",
-
   "service-title-scs": "Spinal Cord Stimulation",
   "service-desc-scs": "Advanced neuromodulation therapy that disrupts pain signals before they reach the brain, offering relief for complex chronic pain conditions.",
-
   "service-title-joint": "Joint Injections",
   "service-desc-joint": "Targeted corticosteroid and hyaluronic acid injections to reduce inflammation and restore joint mobility and comfort.",
-
   "service-title-nerve": "Nerve Blocks",
   "service-desc-nerve": "Precise anesthetic injections that interrupt pain signals along specific nerve pathways for immediate and lasting relief.",
-
   "service-title-prp": "Regenerative Medicine (PRP)",
   "service-desc-prp": "Platelet-rich plasma therapy harnessing your body's own healing factors to repair damaged tissue and promote long-term recovery.",
-
   "service-title-meds": "Medication Management",
   "service-desc-meds": "Carefully monitored, evidence-based pharmacological plans integrated with your overall care strategy for safe, effective symptom control.",
+
+  "about-banner-heading": "About Apex Pain Clinic",
+  "about-banner-sub": "A team built on compassion, expertise, and a commitment to getting you back to the life you love.",
+
+  "about-mission-heading": "Why We Do What We Do",
+  "about-mission-p1": "Apex Pain Clinic was founded with a single purpose: to give patients suffering from chronic pain a clear, compassionate path forward. Pain is not just physical — it affects every part of a person’s life. We treat the whole patient, not just the symptom.",
+  "about-mission-p2": "Our physicians combine decades of clinical experience with the latest interventional techniques to create individualized treatment plans. We believe that every patient deserves to understand their condition and feel confident in their care.",
+  "about-mission-p3": "From your first consultation to your ongoing follow-up, our team is with you every step of the way.",
+
+  "about-value-1-title": "Compassion First",
+  "about-value-1-desc": "We listen before we treat. Every patient interaction begins with empathy and respect.",
+  "about-value-2-title": "Evidence-Based Care",
+  "about-value-2-desc": "Our treatment decisions are grounded in the latest clinical research and best practices.",
+  "about-value-3-title": "Patient Education",
+  "about-value-3-desc": "We empower patients with clear explanations so they can be active participants in their recovery.",
+  "about-value-4-title": "Continuous Improvement",
+  "about-value-4-desc": "We invest in advanced training and technology to stay at the forefront of pain medicine.",
+
+  "stat-patients-num": "500+",
+  "stat-patients-label": "Patients Treated",
+  "stat-years-num": "15+",
+  "stat-years-label": "Years of Experience",
+  "stat-locations-num": "3",
+  "stat-locations-label": "Clinic Locations",
+  "stat-satisfaction-num": "98%",
+  "stat-satisfaction-label": "Patient Satisfaction",
 
   "contact-address": "123 Wellness Blvd, Suite 400<br>Miami, FL 33101",
   "contact-phone": "(305) 555-0100",
