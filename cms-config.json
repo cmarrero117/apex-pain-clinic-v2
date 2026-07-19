@@ -2,12 +2,36 @@
   "seo-title": "Apex Pain Clinic",
   "seo-description": "Apex Pain Clinic – Board-certified pain management combining interventional techniques with holistic care.",
 
+  "seo-title-services": "Services – Apex Pain Clinic",
+  "seo-description-services": "Pain management services at Apex Pain Clinic – interventional treatments, nerve blocks, PRP, and more.",
+
   "hero-headline": "Reclaim Your Life<br>From Chronic Pain",
   "hero-subheadline": "Personalized, compassionate care combining advanced interventional techniques with holistic treatment plans.",
   "hero-cta": "Book a Consultation",
   "hero-cta-url": "#contact",
 
   "business-name": "Apex Pain Clinic",
+
+  "services-banner-heading": "Our Services",
+  "services-banner-sub": "A full spectrum of interventional and rehabilitative treatments, tailored to your condition.",
+
+  "service-title-pain": "Interventional Pain Management",
+  "service-desc-pain": "Minimally invasive procedures targeting the source of pain for lasting relief without the risks of open surgery.",
+
+  "service-title-scs": "Spinal Cord Stimulation",
+  "service-desc-scs": "Advanced neuromodulation therapy that disrupts pain signals before they reach the brain, offering relief for complex chronic pain conditions.",
+
+  "service-title-joint": "Joint Injections",
+  "service-desc-joint": "Targeted corticosteroid and hyaluronic acid injections to reduce inflammation and restore joint mobility and comfort.",
+
+  "service-title-nerve": "Nerve Blocks",
+  "service-desc-nerve": "Precise anesthetic injections that interrupt pain signals along specific nerve pathways for immediate and lasting relief.",
+
+  "service-title-prp": "Regenerative Medicine (PRP)",
+  "service-desc-prp": "Platelet-rich plasma therapy harnessing your body's own healing factors to repair damaged tissue and promote long-term recovery.",
+
+  "service-title-meds": "Medication Management",
+  "service-desc-meds": "Carefully monitored, evidence-based pharmacological plans integrated with your overall care strategy for safe, effective symptom control.",
 
   "contact-address": "123 Wellness Blvd, Suite 400<br>Miami, FL 33101",
   "contact-phone": "(305) 555-0100",
