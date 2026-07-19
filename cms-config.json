@@ -8,6 +8,9 @@
   "seo-title-about": "About – Apex Pain Clinic",
   "seo-description-about": "About Apex Pain Clinic – Our mission, values, and story.",
 
+  "seo-title-team": "Our Team – Apex Pain Clinic",
+  "seo-description-team": "Meet the Apex Pain Clinic team – board-certified pain management specialists.",
+
   "hero-headline": "Reclaim Your Life<br>From Chronic Pain",
   "hero-subheadline": "Personalized, compassionate care combining advanced interventional techniques with holistic treatment plans.",
   "hero-cta": "Book a Consultation",
@@ -57,11 +60,37 @@
   "stat-satisfaction-num": "98%",
   "stat-satisfaction-label": "Patient Satisfaction",
 
+  "team-banner-heading": "Meet the Specialists",
+  "team-banner-sub": "Board-certified physicians dedicated to delivering expert, compassionate pain care.",
+
+  "doctor-1-name": "Dr. Elena Vasquez, MD",
+  "doctor-1-specialty": "Interventional Pain Medicine",
+  "doctor-1-bio": "Dr. Vasquez brings over 18 years of experience in minimally invasive pain procedures, with subspecialty training in neuromodulation and spinal interventions.",
+  "doctor-1-tag-1": "Spinal Cord Stimulation",
+  "doctor-1-tag-2": "Epidural Injections",
+  "doctor-1-tag-3": "Nerve Blocks",
+
+  "doctor-2-name": "Dr. Marcus Chen, MD",
+  "doctor-2-specialty": "Rehabilitation & Pain Management",
+  "doctor-2-bio": "Dr. Chen specializes in rehabilitative approaches to chronic pain, combining physical medicine with interventional techniques for comprehensive patient outcomes.",
+  "doctor-2-tag-1": "Joint Injections",
+  "doctor-2-tag-2": "PRP Therapy",
+  "doctor-2-tag-3": "Medication Management",
+
+  "doctor-3-name": "Dr. Priya Nair, MD",
+  "doctor-3-specialty": "Anesthesiology & Pain Medicine",
+  "doctor-3-bio": "Dr. Nair’s background in anesthesiology gives her a precision-focused approach to nerve blocks and complex regional pain syndrome management.",
+  "doctor-3-tag-1": "Nerve Blocks",
+  "doctor-3-tag-2": "CRPS Management",
+  "doctor-3-tag-3": "Ketamine Therapy",
+
   "contact-address": "123 Wellness Blvd, Suite 400<br>Miami, FL 33101",
   "contact-phone": "(305) 555-0100",
   "contact-email": "info@apexpainclinic.com",
 
   "contact-address-footer": "123 Wellness Blvd, Suite 400<br>Miami, FL 33101",
   "contact-phone-footer": "(305) 555-0100",
-  "contact-email-footer": "info@apexpainclinic.com"
+  "contact-email-footer": "info@apexpainclinic.com",
+
+  "clinic-hours": "Mon–Fri: 8AM – 5PM<br>Sat: 9AM – 1PM"
 }
